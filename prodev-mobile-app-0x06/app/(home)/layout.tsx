@@ -13,6 +13,7 @@ const HomeRootLayout = () => {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#34967C",
+        headerShown: false,
       }}
     >
       <Tabs.Screen
@@ -37,7 +38,7 @@ const HomeRootLayout = () => {
       <Tabs.Screen
         name="saved"
         options={{
-          title: "Search",
+          title: "Saved",
           headerShown: true,
           tabBarIcon: ({ color }) => (
             <EvilIcons name="heart" size={27} color={color} />
@@ -47,7 +48,7 @@ const HomeRootLayout = () => {
       <Tabs.Screen
         name="inbox"
         options={{
-          title: "Search",
+          title: "Inbox",
           headerShown: true,
           tabBarIcon: ({ color }) => (
             <Ionicons name="chatbubbles-outline" size={24} color={color} />
@@ -57,8 +58,7 @@ const HomeRootLayout = () => {
       <Tabs.Screen
         name="profile"
         options={{
-          title: "Search",
-          headerShown: true,
+          title: "Profile",
           tabBarIcon: ({ color }) => (
             <FontAwesome name="user-o" size={24} color="black" />
           ),
